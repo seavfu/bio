@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fuuu | Developer Portfolio</title>
+
+  <meta name="description" content="Personal profile and links for Fuuu - coder, seller, modder, and script enthusiast." />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Prevent flash: set initial theme early -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('mode');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (saved === 'dark' || (!saved && prefersDark)) {
+          document.documentElement.classList.add('dark-mode');
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <div class="container" tabindex="-1">
+    <!-- Theme toggle moved inside -->
+    <button id="themeToggle"
+            class="theme-toggle"
+            aria-label="Toggle dark mode"
+            aria-pressed="false"
+            title="Toggle theme">
+      <!-- Sun -->
+      <svg class="icon sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M6.76 4.84l-1.8-1.79L3.17 4.84l1.79 1.79 1.8-1.79zm10.48 0l1.79-1.79 1.79 1.79-1.79 1.79-1.79-1.79zM12 4V1h0v3zm0 19v-3h0v3zm7.16-7H22v0h-2.84zM2 16h3v0H2zm13.66 3.66l1.79 1.79 1.79-1.79-1.79-1.79-1.79 1.79zM4.76 17.87l-1.8 1.79 1.79 1.79 1.8-1.79-1.79-1.79zM12 7a5 5 0 100 10 5 5 0 000-10z"/>
+      </svg>
+      <!-- Moon -->
+      <svg class="icon moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"/>
+      </svg>
+    </button>
+
+    <img src="profile.png" alt="Profile picture of Fuuu" class="profile-pic" />
+    <h1>Fuuu</h1>
+    <p class="bio">
+      💻 Coder, seller & modder — I build, tweak, and share custom scripts.
+    </p>
+
+    <nav class="links" aria-label="Profile links">
+      <a href="https://t.me/fuuu_store" target="_blank" rel="noopener noreferrer">
+        <!-- Telegram -->
+        <svg class="icon inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+          <path d="M120 0C53.73 0 0 53.73 0 120s53.73 120 120 120 120-53.73 120-120S186.27 0 120 0zm56.19 82.27l-20.47 96.62c-1.54 6.82-5.56 8.5-11.27 5.31l-31.06-22.9-15 14.43c-1.66 1.66-3.05 3.05-6.23 3.05l2.23-31.71 57.73-52.17c2.51-2.23-.55-3.48-3.88-1.25l-71.43 45-30.78-9.62c-6.68-2.09-6.82-6.68 1.39-9.88l120.29-46.47c5.57-2.05 10.45 1.25 8.65 9.2z"/>
+        </svg>
+        Telegram Channel
+      </a>
+      <a href="https://t.me/fuuu_official" target="_blank" rel="noopener noreferrer">
+        <svg class="icon inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+          <path d="M120 0C53.73 0 0 53.73 0 120s53.73 120 120 120 120-53.73 120-120S186.27 0 120 0zm56.19 82.27l-20.47 96.62c-1.54 6.82-5.56 8.5-11.27 5.31l-31.06-22.9-15 14.43c-1.66 1.66-3.05 3.05-6.23 3.05l2.23-31.71 57.73-52.17c2.51-2.23-.55-3.48-3.88-1.25l-71.43 45-30.78-9.62c-6.68-2.09-6.82-6.68 1.39-9.88l120.29-46.47c5.57-2.05 10.45 1.25 8.65 9.2z"/>
+        </svg>
+        Telegram @fuuu_official
+      </a>
+      <a href="https://www.youtube.com/@fuuu_official" target="_blank" rel="noopener noreferrer">
+        <!-- YouTube -->
+        <svg class="icon inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M23.5 6.2s-.2-1.6-.8-2.3c-.8-.8-1.7-.8-2.1-.9C17.4 2.7 12 2.7 12 2.7h-.1s-5.4 0-8.6.3c-.5.1-1.4.1-2.1.9C.7 4.6.5 6.2.5 6.2S0 8.1 0 10v1.9c0 1.9.5 3.8.5 3.8s.2 1.6.8 2.3c.8.8 1.9.8 2.4.9 1.7.2 7.3.3 8.3.3s6.5 0 8.3-.3c.5-.1 1.6-.1 2.4-.9.6-.7.8-2.3.8-2.3s.5-1.9.5-3.8V10c0-1.9-.5-3.8-.5-3.8zM9.7 14.6V8.7l6.2 2.9-6.2 3z"/>
+        </svg>
+        YouTube
+      </a>
+      <a href="mailto:seavfoueang@gmail.com">
+        <!-- Gmail -->
+        <svg class="icon inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path fill="currentColor" d="M502.3 190.8c3.4-2.7 5.7-7.2 5.7-12.2v-71.4c0-13.3-10.7-24-24-24H28c-13.3 0-24 10.7-24 24v71.4c0 5 2.2 9.5 5.7 12.2L256 338.4l246.3-147.6zM256 374.6L32 232v196c0 13.3 10.7 24 24 24h400c13.3 0 24-10.7 24-24V232L256 374.6z"/>
+        </svg>
+        Email Me
+      </a>
+    </nav>
+
+    <footer>© 2025 Fuuu</footer>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
